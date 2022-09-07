@@ -14,10 +14,10 @@ public class App
         //mallard.display();
         Duck redHead = new RedHeadDuck();
         //redHead.display();
-        //Duck rubber = new RubberDuck();
+        Duck rubber = new RubberDuck();
         testDuck(redHead);
         testDuck(mallard);
-        //testDuck(rubber);
+        testDuck(rubber);
     }
 
     private static void testDuck (Duck duck){
