@@ -11,8 +11,19 @@ public class App
         System.out.println( "Hello Ducks!" );
 
         Duck mallard = new Mallard();
-        mallard.display();
+        //mallard.display();
         Duck redHead = new RedHeadDuck();
-        redHead.display();
+        //redHead.display();
+        //Duck rubber = new RubberDuck();
+        testDuck(redHead);
+        testDuck(mallard);
+        //testDuck(rubber);
+    }
+
+    private static void testDuck (Duck duck){
+         duck.display();
+         duck.swim();
+         duck.quack();
+         duck.fly();
     }
 }
