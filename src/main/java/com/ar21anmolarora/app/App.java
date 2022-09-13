@@ -18,17 +18,16 @@ public class App
         testDuck(redHead);
         testDuck(mallard);
         testDuck(rubber);
-        System.out.println("This is Mallard info");
         interfaceTest(mallard);
-        System.out.println("This is Rubber duck info");
         interfaceTest(rubber);
 
         // INTERFACE VS ABSTRACT CLASS!!!!
     }
 
     private static void interfaceTest(Duck duck){
+        duck.display();
         duck.performFly();
-        duck.performQuack();
+        //duck.performQuack();
     }
     private static void testDuck (Duck duck){
          //duck.display();

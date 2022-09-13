@@ -1,6 +1,11 @@
 package com.ar21anmolarora.app;
 
-public class Duck {
+public abstract class Duck {
+
+
+    // Since all ducks cant fly we create an attribute which is an interface (like an abstract class )
+    public FlyBehaviour flyBehaviour;
+    public QuackBehaviour quackBehaviour;
 
     public void quack(){
         System.out.println("Ducks Quack");
@@ -10,18 +15,23 @@ public class Duck {
         System.out.println("Ducks Swim");
     }
 
-    public void display(){
-        System.out.println("Show ducks");
-    }
+    public abstract void display();
 
-    // Since all ducks cant fly we create an attribute which is an interface (like an abstract class )
-    public FlyBehaviour flyBehaviour;
+    
     // Add actual action method:
     public void performFly(){
         flyBehaviour.fly();
     }
 
-    public QuackBehaviour quackBehaviour;
+
+    public void setFlyBehaviour(FlyBehaviour fb){
+        flyBehaviour = fb;
+    }
+
+    public void setQuackBehaviour(QuackBehaviour qb){
+        quackBehaviour = qb;
+    }
+
     public void performQuack(){
         quackBehaviour.quack();
     }
