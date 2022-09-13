@@ -25,10 +25,12 @@ public abstract class Duck {
 
 
     public void setFlyBehaviour(FlyBehaviour fb){
+        // now  we can set behavioud dynamically for flying
         flyBehaviour = fb;
     }
 
     public void setQuackBehaviour(QuackBehaviour qb){
+        // same for quack!
         quackBehaviour = qb;
     }
 
