@@ -27,7 +27,7 @@ public class App
     private static void interfaceTest(Duck duck){
         duck.display();
         duck.performFly();
-        //duck.performQuack();
+        duck.performQuack();
     }
     private static void testDuck (Duck duck){
          //duck.display();
