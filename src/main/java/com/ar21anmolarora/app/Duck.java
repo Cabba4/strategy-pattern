@@ -14,6 +14,17 @@ public class Duck {
         System.out.println("Show ducks");
     }
 
+    // Since all ducks cant fly we create an attribute which is an interface (like an abstract class )
+    public FlyBehaviour flyBehaviour;
+    // Add actual action method:
+    public void performFly(){
+        flyBehaviour.fly();
+    }
+
+    public QuackBehaviour quackBehaviour;
+    public void performQuack(){
+        quackBehaviour.quack();
+    }
     public void fly(){
         System.out.println("Flying ducks");
     }
