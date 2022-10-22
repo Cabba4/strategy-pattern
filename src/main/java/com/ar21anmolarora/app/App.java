@@ -20,7 +20,8 @@ public class App
         testDuck(rubber);
         interfaceTest(mallard);
         interfaceTest(rubber);
-
+        rubber.setFlyBehaviour(new FlyRocketPowered());
+        interfaceTest(rubber);
         // INTERFACE VS ABSTRACT CLASS!!!!
     }
 
